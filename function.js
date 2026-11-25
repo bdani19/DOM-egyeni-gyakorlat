@@ -96,3 +96,33 @@ fejezet.textContent = "Válassz egy fejezetet"
 
 container.append(kep, fejezet);
 document.body.append(container);
+
+
+temak.forEach( (tema, index) => {
+    const opcio = document.createElement('option');
+    opcio.textContent = tema.nev;
+    opcio.value = index;
+    felsorolas.append(opcio);
+});
+
+felsorolas.addEventListener("change", (event) => {
+    const valt = event.target.value;
+    document.body.style.backgroundColor = temak[valt].hatter;
+    document.body.style.color = temak[valt].betuszin;
+    container.style.backgroundColor = temak[valt].szoveghatter;
+    fejezet.style.backgroundColor = temak[valt].szoveghatter;
+    fejezet.style.color = temak[valt].betuszin;
+});
+
+let betumeretek = [];
+for (let i = 10; i <= 50; i++) {
+    betumeretek.push(i);
+}
+
+betumeretek.forEach( (meret) => {
+    const opcio = document.createElement("option");
+    opcio.textContent = `${meret} px`;
+    opcio.value = meret;
+    meretvalaszt.appendChild(opcio);
+});
+
