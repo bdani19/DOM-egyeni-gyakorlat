@@ -82,3 +82,17 @@ meretvalaszt.id = "meretvalaszto";
 div.append(felsorolas, fejvalaszt, meretvalaszt);
 document.body.append(div);
 
+const container = document.createElement("div");
+container.className = "container";
+
+const kep = document.createElement("img");
+kep.id = "fejezetkep";
+kep.src = "";
+kep.alt = "Testépítés"
+
+const fejezet = document.createElement("p");
+fejezet.id = "szoveg";
+fejezet.textContent = "Válassz egy fejezetet"
+
+container.append(kep, fejezet);
+document.body.append(container);
