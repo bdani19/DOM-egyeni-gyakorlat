@@ -61,3 +61,24 @@ const fejezetszovegek = [
     Az edzőtermekben elérhető általános súlyzókon, rudakon, tárcsákon, illetve a különféle gépeken túl a testépítők kiegészítő felszereléseket is használhatnak. Arnold Schwarzenegger fontosnak tartja a jó edzőcipőt, ami megtámasztja a lábboltozatot, a bokát és nem ruganyos talpú, mint a futócipők. Robert Kennedy enciklopédiája szerint a legolcsóbb tornacipő is jó lehet, ha tartja a bokát, ami fontos a nagy súllyal való guggolásnál és a lábtoló használatánál.[73][74] A bőrkeményedések megelőzése érdekében a testépítők egy része speciális kesztyűt használ a nehéz súlyok emelésénél. Mások gumi- vagy szivacsdarabbal helyettesítik a kesztyűt; nem csak a bőrkeményedések, de az izzadtság miatt előforduló csúszás miatt is. Általánosan véve a kesztyű használata akkor javasolt, ha valamiért zavarja a sportolót a bőrkeményedés kialakulása, a puszta kezes emelés ugyanis javít a fogáson, markolási technikán.[75][76] Vannak testépítők, akik hevedert (gurtnit) használnak a nagyobb súlyok emelésekor, amitől biztosabb lesz a fogásuk és nagyobb súlyt tudnak emelni. Schwarzenegger és Kennedy szerint a gurtni gátolja a szorítóerő fejlődését, Schwarzenegger nem javasolja a használatát.[77][74] Ugyanakkor a builder.hu szerint egyes izmok edzéséhez segítség lehet a heveder, mert „kikapcsolhat” más izomcsoportokat, így koncentráltabbá teheti például a hátizmok edzését.[78] A testépítők körében is elterjedt a súlyemelőövek használata. A súlyemelőöv feladata, hogy nagy súlyok mozgatásakor tartsa a derekat, stabilizálja a felsőtestet.[79]
     `
 ]
+
+
+const cim = document.createElement("h1");
+cim.textContent = "Testépítés";
+document.body.append(cim);
+
+const div = document.createElement("div");
+div.className = "menu";
+
+const felsorolas = document.createElement("select");
+felsorolas.id = "szinvalaszto";
+
+const fejvalaszt = document.createElement("select");
+fejvalaszt.id = "fejvalaszto";
+
+const meretvalaszt = document.createElement("meretvalaszt");
+meretvalaszt.id = "meretvalaszto";
+
+div.append(felsorolas, fejvalaszt, meretvalaszt);
+document.body.append(div);
+
